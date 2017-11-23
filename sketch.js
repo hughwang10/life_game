@@ -8,7 +8,7 @@ var next;
 function setup() {
   createCanvas(windowWidth,windowHeight) //720, 400
   frameRate(10);
-  w = 10;
+  w = 50;
   // Calculate columns and rows
   columns = floor(width/w);
   rows = floor(height/w);
