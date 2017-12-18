@@ -7,8 +7,8 @@ var next;
 
 function setup() {
   createCanvas(windowWidth,windowHeight) //720, 400
-  frameRate(10);
-  w = 50;
+  frameRate(20);
+  w = 20;
   // Calculate columns and rows
   columns = floor(width/w);
   rows = floor(height/w);
@@ -30,7 +30,7 @@ function draw() {
   generate();
   for ( var i = 0; i < columns;i++) {
     for ( var j = 0; j < rows;j++) {
-      if ((board[i][j] == 1)) fill(0);
+      if ((board[i][j] == 1)) fill('#03ff96');
       else fill(255); 
       stroke(0);
       rect(i*w, j*w, w-1, w-1);
